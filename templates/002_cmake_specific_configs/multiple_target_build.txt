@@ -27,13 +27,7 @@ set(sources
     main.cpp
 )
 
-# set buld directories globally
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${BUILD_DIR}")
-#set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${BUILD_DIR}")
-#set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE "${BUILD_DIR}")
-# set_property(TARGET PROPERTY RUNTIME_OUTPUT_DIRECTORY ${BUILD_DIR})
-
-# or per target by
+# set buld directories for each target
 set_property(TARGET "${APP_NAME}_bin" PROPERTY RUNTIME_OUTPUT_DIRECTORY ${BUILD_DIR})
 set_property(TARGET "${APP_NAME}_shared_lib" PROPERTY LIBRARY_OUTPUT_DIRECTORY ${BUILD_DIR})
 set_property(TARGET "${APP_NAME}_static_lib" PROPERTY ARCHIVE_OUTPUT_DIRECTORY ${BUILD_DIR})
