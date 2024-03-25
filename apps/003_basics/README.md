@@ -44,3 +44,29 @@ Links to read:
 * https://leimao.github.io/blog/CPP-Documentation-Using-Doxygen/
 * https://eax.me/doxygen/
 
+
+## Header (`.h`) files
+
+Contains headers of code methods. Also able to contain variables and methods itself
+
+## Preprocessor directives
+
+Commands to preprocessor to execute before compiling. Starts with `#`
+
+Read for examples and more:
+
+* https://www.geeksforgeeks.org/cpp-preprocessors-and-directives/
+* https://www.instms.com/cpp/preprocessor-directives
+
+
+### include
+
+Search content of requested file/library and 'copy' it to current file
+
+Use `<>` to load system level libraries `""` to load local libraries
+
+### pragma
+
+Provide compiler specific instructions.
+
+For example `once` used to prevent multiple including
